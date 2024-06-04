@@ -20,6 +20,8 @@ using DesignPatterns.Creational_Patterns._1_Abstract_Factory.Implementations.Abs
 using DesignPatterns.Creational_Patterns._1_Abstract_Factory.Interfaces.Abstract_Factory;
 using DesignPatterns.Creational_Patterns._2_Builder.Implementations;
 using DesignPatterns.Creational_Patterns._2_Builder.Models;
+using DesignPatterns.Creational_Patterns._3_Factory_method.AbstractImplementations;
+using DesignPatterns.Creational_Patterns._3_Factory_method;
 using System.Linq.Expressions;
 
 namespace DesignPatterns
@@ -222,18 +224,25 @@ namespace DesignPatterns
 
             //2_ Builder Pattern
             // Create a pizza maker with a specific builder
-                var hawaiianPizzaBuilder = new HawaiianPizzaBuilder();
-                var pizzaMaker = new PizzaMaker(hawaiianPizzaBuilder);
+            //var hawaiianPizzaBuilder = new HawaiianPizzaBuilder();
+            //var pizzaMaker = new PizzaMaker(hawaiianPizzaBuilder);
 
-                // Make the pizza
-                pizzaMaker.MakePizza();
+            //// Make the pizza
+            //pizzaMaker.MakePizza();
 
-                // Get the pizza from the builder
-                Pizza pizza = hawaiianPizzaBuilder.GetPizza();
+            //// Get the pizza from the builder
+            //Pizza pizza = hawaiianPizzaBuilder.GetPizza();
 
-                // Display the pizza details
-                Console.WriteLine("Hawaiian Pizza:");
-                pizza.Display();
+            //// Display the pizza details
+            //Console.WriteLine("Hawaiian Pizza:");
+            //pizza.Display();
+
+            //3- Factory_method  Pattern
+            NotificationFactory emailFactory = new EmailNotificationFactory();
+            emailFactory.SendNotification("Hello via Email!");
+
+            NotificationFactory smsFactory = new SMSNotificationFactory();
+            smsFactory.SendNotification("Hello via SMS!");
         }
     }
 }
