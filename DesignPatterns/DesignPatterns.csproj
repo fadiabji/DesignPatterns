@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Creational_Patterns\3_Factory_method\" />
+    <Folder Include="Creational_Patterns\5_Singleton\" />
+    <Folder Include="Creational_Patterns\4_Prototype\" />
+    <Folder Include="Structural_Patterns\1_Adapter\" />
+    <Folder Include="Structural_Patterns\2_Bridge\" />
+    <Folder Include="Structural_Patterns\3_Composite\" />
+    <Folder Include="Structural_Patterns\4_Decorator\" />
+    <Folder Include="Structural_Patterns\5_Facade\" />
+    <Folder Include="Structural_Patterns\6_Flyweight\" />
+    <Folder Include="Structural_Patterns\7_Proxy\" />
+  </ItemGroup>
+
+</Project>
